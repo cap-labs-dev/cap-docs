@@ -62,7 +62,7 @@ The Borrow Boost is calculated as:
 
 In English, the borrow boost is determined based on the current Loan To Value of the delegated Operator. If the Operator's LTV is currently 20%, the boost will be **4.6x**. The minimum boost is **1x** and is capped at **10x.**
 
-Finally, we are introducing the Delegation Boost. Delegations over certain USD amounts will receive a multiplier boost. For example, a $100M delegation will effectively receive double COGs.
+Finally, we are introducing the Delegation Boost. Delegations over certain USD amounts will receive a multiplier boost. Specifically, the boost follows a step function at 3 amounts: $25m, $50m, and $100m. For example, a $75M delegation will receive **1.5x** COGs.&#x20;
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 

@@ -44,6 +44,7 @@
 ## Rewards
 
 * [Frontier Program](rewards/frontier-program.md)
+* [Homestead Program](rewards/homestead-program.md)
 
 ## Developers
 

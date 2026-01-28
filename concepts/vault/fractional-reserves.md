@@ -8,7 +8,7 @@ The yield strategies are restricted to safe, verifiable sources such as direct r
 
 ## Mechanics
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
 
 The flow is as follows:
 

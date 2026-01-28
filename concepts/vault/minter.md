@@ -16,7 +16,7 @@ Fees are dynamically adjusted according to the exposure of assets in the system.
 
 #### Fee Calculations
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The fee system operates across three distinct zones based on where the current ratio is:
 

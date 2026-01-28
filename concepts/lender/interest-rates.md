@@ -17,7 +17,7 @@ Each rate is defined as below:
 3. **Utilization Rate**: Dynamic rates based on asset utilization. Calculated via a piecewise linear function and a rate multiplier
 4. **Restaker Rate**: Fixed annual rate set paid by the Operator to the Delegator underwriting them
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Let us breakdown the interest formula:
 

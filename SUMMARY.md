@@ -49,6 +49,16 @@
 ## Developers
 
 * [Addresses](developers/addresses.md)
+* [Contract Reference](developers/contracts/README.md)
+  * [Vault](developers/contracts/vault.md)
+  * [Minter](developers/contracts/minter.md)
+  * [Fractional Reserve](developers/contracts/fractional-reserve.md)
+  * [Lender](developers/contracts/lender.md)
+  * [Delegation](developers/contracts/delegation.md)
+  * [Fee Auction](developers/contracts/fee-auction.md)
+  * [Oracle](developers/contracts/oracle.md)
+  * [Access Controls](developers/contracts/access-controls.md)
+  * [Tokens](developers/contracts/tokens.md)
 
 ## Resources
 

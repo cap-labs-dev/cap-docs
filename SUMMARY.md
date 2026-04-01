@@ -49,6 +49,7 @@
 ## Developers
 
 * [Addresses](developers/addresses.md)
+* [Price Sources](developers/price-sources.md)
 
 ## Resources
 

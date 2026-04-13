@@ -1,6 +1,6 @@
 # Fractional Reserves
 
-The [Fractional Reserve](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/vault/FractionalReserve.sol) contracts allows the Vault to deploy idle capital into yield-generating strategies per reserve asset. In order to ensure sufficient liquidity for immediate withdrawals and redemptions, a fixed amount of capital can be set in the buffer reserve.&#x20;
+The [Fractional Reserve](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/vault/FractionalReserve.sol) contracts allows the Vault to deploy idle capital into yield-generating strategies per reserve asset. In order to ensure sufficient liquidity for immediate withdrawals and redemptions, a fixed amount of capital can be set in the buffer reserve.
 
 The yield strategies are restricted to safe, verifiable sources such as direct revenue sharing from the reserve assets, or deployment into leading crypto lending markets such as Aave. This design ensures capital efficiency of the underlying assets while maintaining redeemability guarantees and reserve transparency.
 
@@ -8,7 +8,7 @@ The yield strategies are restricted to safe, verifiable sources such as direct r
 
 ## Mechanics
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
 
 The flow is as follows:
 
@@ -69,7 +69,7 @@ Key features:
 * All of the Vault shares are redeemed from the Fractional Reserve Vault
 * Supports [partial divests](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/vault/libraries/FractionalReserveLogic.sol#L84) in case of user withdrawals or emergency
 
-**`realizeInterest`**: Withdraws accumulated interest from fractional reserve strategies&#x20;
+**`realizeInterest`**: Withdraws accumulated interest from fractional reserve strategies
 
 ```solidity
 function realizeInterest(address _asset) external
@@ -134,7 +134,7 @@ struct FractionalReserveStorage {
 
 ### Token Holder
 
-A TokenHolder Vault contains a simple strategy for holding the underlying asset. The implementation is inherited from Yearn V3's [Tokenized Strategy](https://github.com/yearn/tokenized-strategy). The Vault is deployed via the [TokenHolderFactory](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/fractionalReserve/TokenHolderFactory.sol).&#x20;
+A TokenHolder Vault contains a simple strategy for holding the underlying asset. The implementation is inherited from Yearn V3's [Tokenized Strategy](https://github.com/yearn/tokenized-strategy). The Vault is deployed via the [TokenHolderFactory](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/fractionalReserve/TokenHolderFactory.sol).
 
 **Key features**
 
@@ -190,4 +190,3 @@ Automates capital deployment into fractional reserve strategies by calling inves
 ## Assets and corresponding strategies
 
 Currently, USDC is supported with the [Aave V3 lending strategy](https://github.com/cap-labs-dev/tokenized-aave-v3). More assets and strategies coming soon!
-

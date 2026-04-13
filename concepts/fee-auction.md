@@ -1,6 +1,6 @@
 # Fee Auction
 
-The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) facilitates permissionless Dutch auctions where collected protocol fees are sold to the winning bidder. The proceeds are sent to the [Fee Receiver](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeReceiver/FeeReceiver.sol) to convert to cUSD and distribute to stcUSD holders. The Fee Auction module provides an efficient and transparent way to distribute accumulated fees to participants while ensuring fair price discovery through time-based price decay.&#x20;
+The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) facilitates permissionless Dutch auctions where collected protocol fees are sold to the winning bidder. The proceeds are sent to the [Fee Receiver](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeReceiver/FeeReceiver.sol) to convert to cUSD and distribute to stcUSD holders. The Fee Auction module provides an efficient and transparent way to distribute accumulated fees to participants while ensuring fair price discovery through time-based price decay.
 
 ## Mechanics
 
@@ -10,7 +10,7 @@ The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contra
 2. **Dutch Auction**: Fee Auction sells accumulated assets via a Dutch auction mechanism
 3. **Fee Distribution**: Fee Receiver collects cUSD from auction sales and distributes to stcUSD token holders
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
 
 ### Dutch Auction Mechanics
 
@@ -37,7 +37,7 @@ The Fee Auction system consists of three main components:
 
 ### Fee Auction
 
-The [FeeAuction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) contract implements a Dutch auction mechanism for selling accumulated yield.&#x20;
+The [FeeAuction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) contract implements a Dutch auction mechanism for selling accumulated yield.
 
 #### Core Functions
 
@@ -123,7 +123,7 @@ function setProtocolFeeReceiver(address _protocolFeeReceiver) external checkAcce
 
 ### Gelato Integrations
 
-Gelato is used in the Fee Auction to automate yield harvesting and fee distribution via CapInterestHarvester and CapNotify respectively.&#x20;
+Gelato is used in the Fee Auction to automate yield harvesting and fee distribution via CapInterestHarvester and CapNotify respectively.
 
 #### CapInterestHarvester
 
@@ -146,7 +146,7 @@ Harvests yields from many sources via the [harvestInterest](https://github.com/c
 * Profit-based: Execute if minting cUSD and buying interest is profitable
 * Gas Optimization: Only execute when profitable to cover gas costs
 
-#### CapNotify&#x20;
+#### CapNotify
 
 **`notify`**: Automates fee distribution to stcUSD holders
 

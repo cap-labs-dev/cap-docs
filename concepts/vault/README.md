@@ -40,9 +40,9 @@ When a user redeems, the flow is as follows:
 
 ### Borrow Operations
 
-Registered Operators can borrow assets from the Vault via the Lender, provided they are sufficiently collateralized by delegated assets from shared security networks. While assets are lent out from the Vault, the core borrow logic is implemented in the Lender contract. When the Operator requests to borrow via the Lender, the Lender calls `Vault.borrow()`  to transfer assets to the Lender, updating the utilization and reserve state of the Vault.&#x20;
+Registered Borrowers can borrow assets from the Vault via the Lender, provided they are sufficiently collateralized by delegated assets from shared security networks. While assets are lent out from the Vault, the core borrow logic is implemented in the Lender contract. When the Borrower requests to borrow via the Lender, the Lender calls `Vault.borrow()`  to transfer assets to the Lender, updating the utilization and reserve state of the Vault.&#x20;
 
-Similarly, Operators can repay via the Lender, which transfers borrowed assets back to the Vault.
+Similarly, Borrowers can repay via the Lender, which transfers borrowed assets back to the Vault.
 
 ### Vault Management
 

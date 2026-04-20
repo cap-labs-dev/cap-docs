@@ -4,7 +4,7 @@
 
 Governance:
 
-* Parameters, collateral management, operator onboarding, protocol fees
+* Parameters, collateral management, Borrower onboarding, protocol fees
 
 Protocol Integration (TBD):
 

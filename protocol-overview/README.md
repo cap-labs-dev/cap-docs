@@ -2,4 +2,4 @@
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>High-level Overview of Cap's Design</p></figcaption></figure>
 
-Cap is a three-sided marketplace designed to run autonomously via economic incentives. Cap outsources the generation of yield via a diverse layer of institutional operators ranging from banks, HFT firms, and market makers. The trust marketplace of Shared Security Networks enables Cap to generate perpetual competitive yield under any market conditions.
+Cap is a credit marketplace where the functions of underwriting, borrowing, and lending are separated and enforced by code. Underwriters escrow collateral to backstop institutional Borrowers. Those Borrowers gain access to credit lines funded by Lenders depositing stablecoins. The Underwriter's escrowed collateral is the first-loss buffer: if a Borrower defaults, the collateral is liquidated before Lenders absorb any loss. Every guarantee, every collateral position, and every Borrower exposure is visible onchain in real time.

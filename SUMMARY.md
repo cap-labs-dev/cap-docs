@@ -7,6 +7,7 @@
 * [Protocol Overview](overview/protocol-overview/README.md)
   * [Lending Mechanics](overview/protocol-overview/stcusd-mechanics.md)
   * [Underwriting Mechanics](overview/protocol-overview/shared-security-networks.md)
+  * [Financial Guarantees](overview/protocol-overview/financial-guarantees.md)
 * [Risks](overview/risks.md)
 * [FAQs](overview/faqs.md)
 

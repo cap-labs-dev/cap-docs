@@ -52,5 +52,14 @@ DEFAULT_ADMIN_ROLE
 * Protocol pause (`pauseProtocol`, `unpauseProtocol`)
 * Emergency functions (`emergencyWithdraw`, `rescueERC20`)
 
+## Timelock
 
+Critical administrative operations are routed through an OpenZeppelin [TimelockController](https://docs.openzeppelin.com/contracts/5.x/api/governance#TimelockController) with a **1-day minimum delay** (86,400 seconds). The Timelock enforces a mandatory waiting period between when an operation is proposed and when it can be executed, giving participants time to react to parameter changes.
+
+The Timelock holds permissions on Cap contracts via the same role-based access control system described above. Operations must be scheduled, wait the full delay period, and then be explicitly executed — they cannot bypass the delay.
+
+| Parameter | Value |
+|---|---|
+| Min Delay | 86,400 seconds (1 day) |
+| Contract | [`0xD8236031d8279d82E615aF2BFab5FC0127A329ab`](https://etherscan.io/address/0xD8236031d8279d82E615aF2BFab5FC0127A329ab) |
 

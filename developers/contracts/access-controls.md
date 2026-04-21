@@ -164,7 +164,27 @@ IAccessControl(accessControl).revokeAccess(selector, delegation, oldAdmin);
 
 ---
 
-### 3. Checking access off-chain (role ID calculation)
+### 3. Timelock
+
+Critical admin operations are executed through an OpenZeppelin [TimelockController](https://docs.openzeppelin.com/contracts/5.x/api/governance#TimelockController) deployed at [`0xD8236031d8279d82E615aF2BFab5FC0127A329ab`](https://etherscan.io/address/0xD8236031d8279d82E615aF2BFab5FC0127A329ab). The Timelock holds roles in Cap's AccessControl system like any other permissioned address — the difference is that all calls from the Timelock must first be scheduled and wait a minimum delay before execution.
+
+| Parameter | Value |
+|---|---|
+| Min Delay | 86,400 seconds (1 day) |
+| Type | OpenZeppelin `TimelockController` |
+
+The Timelock follows the standard OZ lifecycle:
+
+1. **Schedule** — `schedule()` or `scheduleBatch()` queues an operation with at least `minDelay` seconds of waiting time
+2. **Wait** — the operation cannot be executed until the delay has elapsed
+3. **Execute** — `execute()` or `executeBatch()` runs the queued operation
+4. **Cancel** (optional) — `cancel()` removes a pending operation before execution
+
+For full interface details, see the [OpenZeppelin TimelockController documentation](https://docs.openzeppelin.com/contracts/5.x/api/governance#TimelockController).
+
+---
+
+### 4. Checking access off-chain (role ID calculation)
 
 ```solidity
 interface IAccessControl {

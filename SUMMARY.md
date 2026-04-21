@@ -15,7 +15,7 @@
 * [Borrower Onboarding](guides/operator-onboarding/README.md)
   * [Symbiotic](guides/operator-onboarding/symbiotic.md)
   * [EigenLayer](guides/operator-onboarding/eigenlayer.md)
-* [Delegator Onboarding](guides/delegator-onboarding/README.md)
+* [Underwriter Onboarding](guides/delegator-onboarding/README.md)
   * [Symbiotic](guides/delegator-onboarding/symbiotic.md)
   * [EigenLayer](guides/delegator-onboarding/eigenlayer.md)
 

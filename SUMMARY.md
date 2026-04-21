@@ -5,15 +5,10 @@
 * [Introduction](README.md)
 * [Why Cap?](overview/why-cap.md)
 * [Protocol Overview](overview/protocol-overview/README.md)
-  * [cUSD Mechanics](overview/protocol-overview/cusd-mechanics.md)
-  * [stcUSD Mechanics](overview/protocol-overview/stcusd-mechanics.md)
-  * [Shared Security Networks](overview/protocol-overview/shared-security-networks.md)
-
-***
-
-* [Cap Tokens](cap-tokens.md)
-* [Risks](risks.md)
-* [FAQs](faqs.md)
+  * [Lending Mechanics](overview/protocol-overview/stcusd-mechanics.md)
+  * [Underwriting Mechanics](overview/protocol-overview/shared-security-networks.md)
+* [Risks](overview/risks.md)
+* [FAQs](overview/faqs.md)
 
 ## Guides
 

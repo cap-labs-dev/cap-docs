@@ -23,7 +23,7 @@ Cap is a credit marketplace where the functions of underwriting, borrowing, and 
 ### Flow of Funds
 
 1. **Deposit.** Lenders deposit whitelisted reserve assets (stablecoins, tokenized MMFs) to the Cap Reserve, minting cUSD. Staked cUSD (stcUSD) accrues yield.
-2. **Delegate.** Underwriters escrow collateral via Shared Security Networks and delegate it to a specific Borrower.
+2. **Delegate.** Underwriters escrow collateral to underwrite a specific Borrower for an underwriting premium.
 3. **Borrow.** Borrowers draw reserve assets liquidity against that delegation to execute a yield strategy.
 4. **Repay.** Borrowers repay principal and interest. Underwriters earn an underwriting premium, Lenders earn yield, Borrowers retain the surplus.
-5. **Liquidate.** If a Borrower acts maliciously or collateral drops significantly in value, Underwriter collateral is liquidated and redistributed to the Reserve — cUSD remains fully collateralized at all times.
+5. **Liquidate.** If a Borrower acts maliciously or collateral drops significantly in value, Underwriter collateral is liquidated and redistributed to the Reserve — cUSD remains fully backed at all times.

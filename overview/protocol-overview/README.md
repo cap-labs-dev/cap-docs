@@ -9,15 +9,15 @@ Cap is a credit marketplace where the functions of underwriting, borrowing, and 
 ### Protocol Actors
 
 * **Lenders** receive cUSD in exchange for depositing whitelisted assets to the collateral pool. cUSD can be staked for stcUSD to earn auto-compounding yield on institutional loans, with principal protected by Underwriter collateral.
-* **Borrowers** draw reserve assets against Underwriter collateral to execute yield strategies, retaining any surplus above underwriting premium and borrow rate.&#x20;
+* **Borrowers** draw reserve assets against Underwriter collateral to execute yield strategies. When repaying, they pay the hurdle rate: an aggregate of underwriting premium and borrow rate.&#x20;
 * **Underwriters** escrow collateral to back a specific Borrower, earning a fixed underwriting premium they set per loan. Underwriter delegations are used to protect Lenders against default risk.
-* **Liquidators** liquidate Underwriter collateral via permissionless Dutch auction when a Borrower's health factor falls below threshold, earning bonuses that scale with speed.
+* **Liquidators** liquidate Underwriter collateral via permissionless Dutch auction when a Borrower's health factor falls below threshold.
 
 ### **Aligning incentives**
 
 * **Lenders** earn yield regardless of market condition and size. More importantly, their principal is protected by verifiable financial guarantees.
-* **Borrowers** can source on demand capital with no cost basis, retaining any surplus yield after underwriting premium and hurdle rate fees. Furthermore, borrow terms are flexible as Borrowers are able to negotiate with their Underwriter.
-* **Underwriters** earn premiums in exchange for their delegations. They have full autonomy to charge risk premium per Borrower, paid out in blue chip assets such as ETH and USD.
+* **Borrowers** can source on demand capital with no cost basis, retaining any surplus yield after hurdle rate fees. Furthermore, borrow terms are flexible as Borrowers are able to negotiate with their Underwriter.
+* **Underwriters** earn premiums in exchange for their delegations. They have full autonomy to charge risk premium per Borrower, paid out in USD denominated assets.
 * **Liquidators** earn liquidation bonuses. Dutch auctions facilitate faster liquidations as Liquidators earn higher bonuses if they are able to liquidate faster.
 
 ### Flow of Funds

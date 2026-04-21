@@ -4,7 +4,7 @@ description: Verifiable Credit
 
 # Why Cap?
 
-## The Principal Agent Problem
+## The Principal-Agent Problem
 
 Capital allocators in both legacy finance and DeFi encounter the principal-agent problem when allocating funds to yield opportunities: those that make decisions are not fully aligned with liquidity providers. This misalignment of incentives results in an unfavorable outcome for Lenders, with either risky or underperforming opportunities, opaque reporting, and uncertain recourse.
 

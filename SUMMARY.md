@@ -3,22 +3,21 @@
 ## Overview
 
 * [Introduction](README.md)
+* [Why Cap?](overview/why-cap.md)
+* [Protocol Overview](overview/protocol-overview/README.md)
+  * [cUSD Mechanics](overview/protocol-overview/cusd-mechanics.md)
+  * [stcUSD Mechanics](overview/protocol-overview/stcusd-mechanics.md)
+  * [Shared Security Networks](overview/protocol-overview/shared-security-networks.md)
 
 ***
 
-* [Why Cap?](why-cap.md)
-* [Protocol Overview](protocol-overview/README.md)
-  * [Protocol Actors](protocol-overview/protocol-actors.md)
-  * [cUSD Mechanics](protocol-overview/cusd-mechanics.md)
-  * [stcUSD Mechanics](protocol-overview/stcusd-mechanics.md)
-  * [Shared Security Networks](protocol-overview/shared-security-networks.md)
 * [Cap Tokens](cap-tokens.md)
 * [Risks](risks.md)
 * [FAQs](faqs.md)
 
 ## Guides
 
-* [Operator Onboarding](guides/operator-onboarding/README.md)
+* [Borrower Onboarding](guides/operator-onboarding/README.md)
   * [Symbiotic](guides/operator-onboarding/symbiotic.md)
   * [EigenLayer](guides/operator-onboarding/eigenlayer.md)
 * [Delegator Onboarding](guides/delegator-onboarding/README.md)

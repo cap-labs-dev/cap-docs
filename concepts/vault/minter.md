@@ -16,7 +16,7 @@ Fees are dynamically adjusted according to the exposure of assets in the system.
 
 #### Fee Calculations
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 The fee system operates across three distinct zones based on where the current ratio is:
 
@@ -24,7 +24,7 @@ The fee system operates across three distinct zones based on where the current r
 2. `optimal ratio < current ratio < kinkRatio`: Linear fee increase using the first slope
 3. `current ratio > kinkRatio`: Steep fee increase using the second slope
 
-Price Oracles are used for fee calculations and amount determination. A minimum mint fee is placed to prevent manipulation around price oracles.&#x20;
+Price Oracles are used for fee calculations and amount determination. A minimum mint fee is placed to prevent manipulation around price oracles.
 
 The current minimum mint fee is set to 10bps, capped to 5% maximum.
 
@@ -41,7 +41,7 @@ The current minimum mint fee is set to 10bps, capped to 5% maximum.
 
 ### Redeem Fees
 
-Redeem fees in Cap Protocol are simple percentage-based fees applied to proportional redemption operations. Same fees apply to all assets proportional to their asset allocation.  Whitelisted users pay 0% redeem fee
+Redeem fees in Cap Protocol are simple percentage-based fees applied to proportional redemption operations. Same fees apply to all assets proportional to their asset allocation. Whitelisted users pay 0% redeem fee
 
 **Process Flow for Redeem**:
 
@@ -55,4 +55,3 @@ Redeem fees in Cap Protocol are simple percentage-based fees applied to proporti
 Whitelisted users can bypass fees for larger scale operations. Whitelist management is restricted to authorized admins.
 
 For function signatures, parameters, and data structures, see the [Minter Contract Reference](../../developers/contracts/minter.md).
-

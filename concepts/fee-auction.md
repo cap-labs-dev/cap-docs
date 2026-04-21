@@ -1,6 +1,6 @@
 # Fee Auction
 
-The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) facilitates permissionless Dutch auctions where collected protocol fees are sold to the winning bidder. The proceeds are sent to the [Fee Receiver](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeReceiver/FeeReceiver.sol) to convert to cUSD and distribute to stcUSD holders. The Fee Auction module provides an efficient and transparent way to distribute accumulated fees to participants while ensuring fair price discovery through time-based price decay.&#x20;
+The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeAuction/FeeAuction.sol) facilitates permissionless Dutch auctions where collected protocol fees are sold to the winning bidder. The proceeds are sent to the [Fee Receiver](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/feeReceiver/FeeReceiver.sol) to convert to cUSD and distribute to stcUSD holders. The Fee Auction module provides an efficient and transparent way to distribute accumulated fees to participants while ensuring fair price discovery through time-based price decay.
 
 ## Mechanics
 
@@ -10,7 +10,7 @@ The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contra
 2. **Dutch Auction**: Fee Auction sells accumulated assets via a Dutch auction mechanism
 3. **Fee Distribution**: Fee Receiver collects cUSD from auction sales and distributes to stcUSD token holders
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
 
 ### Dutch Auction Mechanics
 

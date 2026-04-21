@@ -1,6 +1,6 @@
 # Fractional Reserves
 
-The [Fractional Reserve](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/vault/FractionalReserve.sol) contracts allows the Vault to deploy idle capital into yield-generating strategies per reserve asset. In order to ensure sufficient liquidity for immediate withdrawals and redemptions, a fixed amount of capital can be set in the buffer reserve.&#x20;
+The [Fractional Reserve](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/vault/FractionalReserve.sol) contracts allows the Vault to deploy idle capital into yield-generating strategies per reserve asset. In order to ensure sufficient liquidity for immediate withdrawals and redemptions, a fixed amount of capital can be set in the buffer reserve.
 
 The yield strategies are restricted to safe, verifiable sources such as direct revenue sharing from the reserve assets, or deployment into leading crypto lending markets such as Aave. This design ensures capital efficiency of the underlying assets while maintaining redeemability guarantees and reserve transparency.
 
@@ -8,7 +8,7 @@ The yield strategies are restricted to safe, verifiable sources such as direct r
 
 ## Mechanics
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Flow of Funds: Fractional Reserves</p></figcaption></figure>
 
 The flow is as follows:
 
@@ -36,4 +36,3 @@ For function signatures, parameters, and data structures, see the [Fractional Re
 ## Assets and corresponding strategies
 
 Currently, USDC is supported with the [Aave V3 lending strategy](https://github.com/cap-labs-dev/tokenized-aave-v3). More assets and strategies coming soon!
-

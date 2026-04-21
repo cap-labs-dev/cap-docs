@@ -4,7 +4,7 @@
 
 ### Protocol Overview
 
-Cap is a credit marketplace where the functions of underwriting, borrowing, and lending are separated and enforced by code. Underwriters escrow collateral to backstop  Borrowers. Those Borrowers gain access to credit lines funded by Lenders depositing stablecoins. The Underwriter's escrowed collateral is the first-loss buffer: if a Borrower defaults, the collateral is liquidated before Lenders absorb any loss. Every guarantee, every collateral position, and every Borrower exposure can be verified onchain.
+Cap is a credit marketplace where the functions of underwriting, borrowing, and lending are separated and enforced by code. Underwriters escrow collateral to backstop  Borrowers. Those Borrowers gain access to credit lines funded by Lenders depositing dollar denominated assets. The Underwriter's escrowed collateral is the first-loss buffer: if a Borrower defaults, the collateral is liquidated before Lenders absorb any loss. Every guarantee, every collateral position, and every Borrower exposure can be verified onchain.
 
 ### Protocol Actors
 

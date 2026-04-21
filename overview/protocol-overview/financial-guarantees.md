@@ -17,7 +17,7 @@ The mechanism turns idle alternative assets — BTC, ETH, and tokenized RWAs (co
 
 **Excess Value**
 
-To see why financial guarantees generate yield, follow the cashflows on a single loan.
+To understand how Cap can generate value via financial guarantees, let us follow the cashflows on a single loan.
 
 A Borrower pays the full unsecured USD borrow rate. That payment must cover two things: the Lender's required return (the USD risk-free rate) and the Underwriter's required return (the unsecured borrow rate for the alternative asset, since that is the opportunity cost of locking it up).
 

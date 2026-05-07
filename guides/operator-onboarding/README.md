@@ -1,12 +1,12 @@
-# Operator Onboarding
+# Borrower Onboarding
 
 The following outlines the process for onboarding as an operator to borrow from Cap.
 
 ### 1. Requirements
 
-* **Agent Address**: A valid Ethereum address (EOA or multisig) to serve as the Agent
-* **Delegator**: Delegator to receive delegations from. The list of current delegators can be found [here](https://cap.app/delegators).&#x20;
-* **Agent Parameters:**
+* **Borrower Address**: A valid Ethereum address (EOA or multisig) to borrow
+* **Underwriter**: Entity that provides credit for the Borrower. The list of current Underwriters can be found [here](https://cap.app/delegators).
+* **Borrower Parameters:**
   * **Delegation Rate**: Fixed delegation premium rate on the amount borrowed
   * **LTV**: Loan-to-Value ratio for initial maximum borrow capacity
 * **Protocol Whitelisting**: Contact the Cap team to request agent registration
@@ -15,7 +15,7 @@ The following outlines the process for onboarding as an operator to borrow from 
 An Operator may only use one Ethereum address per Delegator and collateral pair. They must generate a new address for each new Delegator. Addresses cannot be changed after deployment. For best practices, we recommend using a multisig for the address.
 {% endhint %}
 
-### 2. Register to a SSN of choice&#x20;
+### 2. Register to a SSN of choice
 
 Currently, Cap supports the following Shared Security Networks.
 
@@ -26,9 +26,9 @@ Currently, Cap supports the following Shared Security Networks.
 
 Operators and Delegators may enter into legal agreements outlining terms of delegation, responsibilities, and compliance.
 
-### 4. Participate in Loan Activity&#x20;
+### 4. Participate in Loan Activity
 
-Once coverage is active from the respective shared security network, Operators can participate in borrowing activity directly from Cap's application using the Agent's address.&#x20;
+Once coverage is active from the respective shared security network, Operators can participate in borrowing activity directly from Cap's application using the Agent's address.
 
 Review the risk parameters prior to loan:
 

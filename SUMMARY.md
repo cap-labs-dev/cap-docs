@@ -13,12 +13,12 @@
 
 ## Guides
 
-* [Borrower Onboarding](guides/operator-onboarding/README.md)
-  * [Symbiotic](guides/operator-onboarding/symbiotic.md)
-  * [EigenLayer](guides/operator-onboarding/eigenlayer.md)
-* [Underwriter Onboarding](guides/delegator-onboarding/README.md)
-  * [Symbiotic](guides/delegator-onboarding/symbiotic.md)
-  * [EigenLayer](guides/delegator-onboarding/eigenlayer.md)
+* [Borrower Onboarding](guides/borrower-onboarding/README.md)
+  * [Symbiotic](guides/borrower-onboarding/symbiotic.md)
+  * [EigenLayer](guides/borrower-onboarding/eigenlayer.md)
+* [Underwriter Onboarding](guides/underwriter-onboarding/README.md)
+  * [Symbiotic](guides/underwriter-onboarding/symbiotic.md)
+  * [EigenLayer](guides/underwriter-onboarding/eigenlayer.md)
 
 ## Concepts
 

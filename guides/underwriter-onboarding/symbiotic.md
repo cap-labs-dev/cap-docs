@@ -8,10 +8,10 @@ Vault curators on Symbiotic can easily deploy Cap-specific Symbiotic Vaults usin
 
 Curators can deploy Cap-specific Symbiotic Vaults either via
 
-1. Cap's [UI](https://cap.app/delegators/create-vault) for creating Vault
+1. Cap's [UI](https://cap.app/underwriters/create-vault) for creating Vault
 2. Vault Factory contract's [<kbd>createVault</kbd>](https://github.com/cap-labs-dev/cap-contracts/blob/1064b6a969d55c822dcf0b2c4b733ceb4118737e/contracts/delegation/providers/symbiotic/CapSymbioticVaultFactory.sol#L57) function on Etherscan.&#x20;
 
-As most of the parameters and modules are preconfigured, curators only have to specify the operator address and Collateral asset address when creating the Vault.
+As most of the parameters and modules are preconfigured, curators only have to specify the Borrower address and Collateral asset address when creating the Vault.
 
 The factory contract will create Symbiotic's Delegator, Burner, Slasher and Rewarder modules as needed in Cap's Symbiotic Vault requirements.
 
@@ -29,10 +29,10 @@ returns (address vault, address delegator, address burner, address slasher, addr
 To ensure that all parameters are set-up as intended in Cap's design, Cap only accepts Vaults deployed via the factory contract.&#x20;
 {% endhint %}
 
-Once the Vault is deployed, Cap will add the operator-delegator pair to the system with loan parameters via SymbioticAgentManager's [`addAgent`](https://github.com/cap-labs-dev/cap-contracts/blob/1064b6a969d55c822dcf0b2c4b733ceb4118737e/contracts/delegation/providers/symbiotic/SymbioticAgentManager.sol#L42) function. The function handles necessary registry of the Vault.  Once this part is complete, delegators can start using delegated stake as collateral. &#x20;
+Once deployed,the Borrower-Underwriter pair will be added to Cap's contracts via SymbioticAgentManager's [`addAgent`](https://github.com/cap-labs-dev/cap-contracts/blob/1064b6a969d55c822dcf0b2c4b733ceb4118737e/contracts/delegation/providers/symbiotic/SymbioticAgentManager.sol#L42) function. The function handles necessary registry of the Vault. Once this part is complete, Underwriters can start using delegated stake as collateral.&#x20;
 
 {% hint style="info" %}
-Vault creation will revert if the operator's address is already receiving delegations from another Vault.
+Vault creation will revert if the Borrower's address is already receiving delegations from another Vault.
 {% endhint %}
 
 ### 2. Admin Controls
@@ -58,9 +58,9 @@ vault.setDepositorWhitelistStatus(depositor, status);
 
 ### 3. Collecting Rewards
 
-Rewards are automatically distributed to the StakerRewarder when an operator repays a loan.
+Rewards are automatically distributed to the StakerRewarder when a Borrower repays a loan.
 
-Delegators can also manually claim rewards via the <kbd>realizeRestakerInterest</kbd> function on the [Lender](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/lendingPool/Lender.sol) contract. The contract will distribute accrued interest on the operator's borrowed amount to the StakerRewarder.&#x20;
+Underwriters can also manually claim rewards via the <kbd>realizeRestakerInterest</kbd> function on the [Lender](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/lendingPool/Lender.sol) contract. The contract will distribute accrued interest on the Borrower's borrowed amount to the StakerRewarder.&#x20;
 
 Vault admins can claim the admin fee via the <kbd>claimAdminFee</kbd> function of the Symbiotic StakerRewards.
 
@@ -68,4 +68,8 @@ Vault admins can claim the admin fee via the <kbd>claimAdminFee</kbd> function o
 
 Withdrawals from Symbiotic Vaults take up to 2 epochs to process. Specifically, withdrawals start after the current epoch plus another epoch. Since an epoch is 7 days for Cap Symbiotic Vaults, it takes 8-14 days to complete the withdrawal.
 
-While the withdrawal is processed, the delegation assets are still slashable. If the withdrawal triggers an unhealthy position for the Operator, then the asset may be slashed (after the grace period). It is thus crucial that the withdrawal amount does not affect the Operator's position: it is best advised for Delegators to coordinate the withdrawal with the Operator.
+While the withdrawal is processed, the delegation assets are still liquidatable. If the withdrawal triggers an unhealthy position for the Borrower, then the asset may be liquidated (after the grace period). It is thus crucial that the withdrawal amount does not affect the Borrower's position: it is best advised for Underwriters to coordinate the withdrawal with the Borrower.
+
+
+### 5. Managing the Symbiotic App
+Once registered, the Underwriter profile will be updated in [Symbiotic's app page](https://app.symbiotic.fi/networks). If you wish to change the metadata on the app, please refer to [Symbiotic' guide](https://github.com/symbioticfi/metadata-mainnet) to do so.

@@ -56,6 +56,8 @@ vault.setDepositWhitelist(status);
 vault.setDepositorWhitelistStatus(depositor, status);
 ```
 
+The Borrower-Underwriter pair may also update loan specific parameters; while the liquidation threshold is a global parameter, the LTV can be set by the pair.
+
 ### 3. Collecting Rewards
 
 Rewards are automatically distributed to the StakerRewarder when a Borrower repays a loan.

@@ -6,7 +6,7 @@ The following outlines the process for onboarding Underwriters to Shared Securit
 
 Ensure you have:
 
-* **Borrower Address:** Borrower's Ethereum address that will receive delegations. The Borrower must be already registered in Cap's system.
+* **Borrower Address:** Borrower's Ethereum address that will receive delegations. The Borrower must be already registered in Cap's system. The list of current Underwriters can be found [here](https://cap.app/borrowers).
 * **Underwriting Premium**: Agree on a fixed rate to receive from the Borrower
 * **Collateral Asset:** The asset to be used as vault collateral (ETH/BTC-denominated ERC20s)
 

@@ -5,7 +5,7 @@ The following outlines the process for onboarding as a Borrower to borrow from C
 ### 1. Requirements
 
 * **Borrower Address**: A valid Ethereum address (EOA or multisig) to borrow
-* **Underwriter**: Entity that provides credit for the Borrower. The list of current Underwriters can be found [here](https://cap.app/delegators).
+* **Underwriter**: Entity that provides credit for the Borrower. The list of current Underwriters can be found [here](https://cap.app/underwriters).
 * **Borrower Parameters:**
   * **Underwriting Premium**: Fixed premium rate on the amount borrowed
   * **LTV**: Loan-to-Value ratio for initial maximum borrow capacity

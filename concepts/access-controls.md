@@ -13,54 +13,7 @@ Roles are managed by the Access Control admin, currently set to Cap's multisig a
 * Permissions can be granted/revoked at the function level
 * Contracts inherit access control through the `Access` abstract contract and uses the checkAccess modifier on protected functions
 
-## Architecture
-
-* Access.sol: Inheritable abstract contract that provides the base functionality for access control
-* AccessControl.sol: Central contract that implements the access control logic
-
-### Access Control
-
-#### Core Functions
-
-**`grantAccess`**: Grants permission to call a specific function on a specific contract
-
-```solidity
-function grantAccess(bytes4 _selector, address _contract, address _address) external
-```
-
-* `_selector`: Function selector (4-byte identifier) of the method to grant access to
-* `_contract`: Address of the contract containing the method
-* `_address`: Address to grant access to
-
-**`revokeAccess`**: Revokes permission to call a specific function on a specific contract
-
-```solidity
-function revokeAccess(bytes4 _selector, address _contract, address _address) external
-```
-
-* `_selector`: Function selector (4-byte identifier) of the method to revoke access from
-* `_contract`: Address of the contract containing the method
-* `_address`: Address to revoke access from
-
-**`checkAccess`**: Verifies if an address has permission to call a specific function
-
-```solidity
-function checkAccess(bytes4 _selector, address _contract, address _caller) external view returns (bool hasAccess)
-```
-
-* **Returns**: True if access is granted, false otherwise
-
-When a access controlled function is called, the checkAccess modifier calls [\_checkRole](https://github.com/cap-labs-dev/cap-contracts/blob/main/contracts/access/Access.sol#L35) with the function's selector, contract and message sender.
-
-**`role`**: Gets the role identifier for a specific function selector on a contract
-
-```solidity
-function role(bytes4 _selector, address _contract) public pure returns (bytes32 roleId)
-```
-
-* `_selector`: Function selector (4-byte identifier) of the method
-* `_contract`: Address of the contract containing the method
-* **Returns**: Unique role identifier derived from selector and contract address
+For function signatures and data structures, see the [Access Controls Contract Reference](../developers/contracts/access-controls.md).
 
 ## Role Hierarchy
 
@@ -99,5 +52,14 @@ DEFAULT_ADMIN_ROLE
 * Protocol pause (`pauseProtocol`, `unpauseProtocol`)
 * Emergency functions (`emergencyWithdraw`, `rescueERC20`)
 
+## Timelock
 
+Critical administrative operations are routed through an OpenZeppelin [TimelockController](https://docs.openzeppelin.com/contracts/5.x/api/governance#TimelockController) with a **1-day minimum delay** (86,400 seconds). The Timelock enforces a mandatory waiting period between when an operation is proposed and when it can be executed, giving participants time to react to parameter changes.
+
+The Timelock holds permissions on Cap contracts via the same role-based access control system described above. Operations must be scheduled, wait the full delay period, and then be explicitly executed — they cannot bypass the delay.
+
+| Parameter | Value |
+|---|---|
+| Min Delay | 86,400 seconds (1 day) |
+| Contract | [`0xD8236031d8279d82E615aF2BFab5FC0127A329ab`](https://etherscan.io/address/0xD8236031d8279d82E615aF2BFab5FC0127A329ab) |
 

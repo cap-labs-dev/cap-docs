@@ -1,13 +1,11 @@
 ---
-description: Covered Agent Protocol
+description: A credit platform backed by financial guarantees
 ---
 
 # Introduction
 
-Cap is a stablecoin protocol that provides credible financial guarantees via two products: the dollar-denominated cUSD and the yield-bearing stcUSD.&#x20;
+Welcome to the Cap documentation!\
+\
+Cap is a credit platform backed by financial guarantees built on the Ethereum blockchain. Each loan is underwritten with escrowed collateral to secure the Lender.&#x20;
 
-cUSD is a digital dollar issued on the Ethereum blockchain that can be used on any network. cUSD's reserve is backed by blue chip stablecoins such as USDC, USDT, pyUSD, BUIDL, and BENJI, i.e. issued by regulated institutions with transparent attestations. It is 1:1 redeemable for any of the available reserve assets.&#x20;
-
-stcUSD is a savings product issued by staking cUSD. Any cUSD holder has open access to stcUSD.  Yield is generated via an autonomous layer of operators, who self-select in and out based on the current hurdle rate of the protocol. The risk of yield generation is covered, meaning users have full downside protection that is verifiable by code.
-
-Please find us at the [community forum](https://capcommunity.discourse.group/c/questions/2) if you have any questions.
+The platform relies on a market of Underwriters to independently originate and insure USD loans. Underwriters put their own capital behind each allocation decision and receive an underwriting premium from credit spreads. Lenders earn secured yield that is insured by Underwriter collateral, with all risk coverage transparent and enforced by smart contracts.

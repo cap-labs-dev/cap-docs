@@ -3,27 +3,22 @@
 ## Overview
 
 * [Introduction](README.md)
-
-***
-
-* [Why Cap?](why-cap.md)
-* [Protocol Overview](protocol-overview/README.md)
-  * [Protocol Actors](protocol-overview/protocol-actors.md)
-  * [cUSD Mechanics](protocol-overview/cusd-mechanics.md)
-  * [stcUSD Mechanics](protocol-overview/stcusd-mechanics.md)
-  * [Shared Security Networks](protocol-overview/shared-security-networks.md)
-* [Cap Tokens](cap-tokens.md)
-* [Risks](risks.md)
-* [FAQs](faqs.md)
+* [Why Cap?](overview/why-cap.md)
+* [Protocol Overview](overview/protocol-overview/README.md)
+  * [Lending Mechanics](overview/protocol-overview/stcusd-mechanics.md)
+  * [Underwriting Mechanics](overview/protocol-overview/shared-security-networks.md)
+  * [Financial Guarantees](overview/protocol-overview/financial-guarantees.md)
+* [Risks](overview/risks.md)
+* [FAQs](overview/faqs.md)
 
 ## Guides
 
-* [Operator Onboarding](guides/operator-onboarding/README.md)
-  * [Symbiotic](guides/operator-onboarding/symbiotic.md)
-  * [EigenLayer](guides/operator-onboarding/eigenlayer.md)
-* [Delegator Onboarding](guides/delegator-onboarding/README.md)
-  * [Symbiotic](guides/delegator-onboarding/symbiotic.md)
-  * [EigenLayer](guides/delegator-onboarding/eigenlayer.md)
+* [Borrower Onboarding](guides/borrower-onboarding/README.md)
+  * [Symbiotic](guides/borrower-onboarding/symbiotic.md)
+  * [EigenLayer](guides/borrower-onboarding/eigenlayer.md)
+* [Underwriter Onboarding](guides/underwriter-onboarding/README.md)
+  * [Symbiotic](guides/underwriter-onboarding/symbiotic.md)
+  * [EigenLayer](guides/underwriter-onboarding/eigenlayer.md)
 
 ## Concepts
 
@@ -50,6 +45,16 @@
 
 * [Addresses](developers/addresses.md)
 * [Price Sources](developers/price-sources.md)
+* [Contract Reference](developers/contracts/README.md)
+  * [Vault](developers/contracts/vault.md)
+  * [Minter](developers/contracts/minter.md)
+  * [Fractional Reserve](developers/contracts/fractional-reserve.md)
+  * [Lender](developers/contracts/lender.md)
+  * [Delegation](developers/contracts/delegation.md)
+  * [Fee Auction](developers/contracts/fee-auction.md)
+  * [Oracle](developers/contracts/oracle.md)
+  * [Access Controls](developers/contracts/access-controls.md)
+  * [Tokens](developers/contracts/tokens.md)
 
 ## Resources
 

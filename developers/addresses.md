@@ -30,18 +30,3 @@
 
 <table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0x20C0000000000000000000000520792DcCccCccC</td></tr><tr><td>stcUSD</td><td>0x20c0000000000000000000008EE4fcFF88888888</td></tr></tbody></table>
 
-## Multi-sigs
-
-**Developer multi-sig Address:** 0xb8FC49402dF3ee4f8587268FB89fda4d621a8793
-
-**Cap token owner multi-sig:**
-
-0x80A216738E4e49B262Deae6bEb6578Bdf164c2eA
-
-Signers:
-
-* 0xDD30a4712e6B34926d4f5aA99c1881573407538C
-* 0xdf466Fa3ddd0042d990FA9A023e040884CBaD439
-* 0x7c29F6A93df60Bcd3B20f03B57a2F9e698FD4128
-* 0x62D0b3c0a77bE77EaB2060266a95FfaD9e6A3F51
-* 0xA62f87A9D4B5EE1F83cb644Ea076832A396101b8

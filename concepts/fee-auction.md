@@ -10,7 +10,7 @@ The [Fee Auction](https://github.com/cap-labs-dev/cap-contracts/blob/main/contra
 2. **Dutch Auction**: Fee Auction sells accumulated assets via a Dutch auction mechanism
 3. **Fee Distribution**: Fee Receiver collects cUSD from auction sales and distributes to stcUSD token holders
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>Flow of Funds: Fee Auction</p></figcaption></figure>
 
 ### Dutch Auction Mechanics
 

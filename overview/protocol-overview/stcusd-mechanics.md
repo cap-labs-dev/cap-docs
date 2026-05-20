@@ -1,4 +1,4 @@
-# stcUSD Mechanics
+# Lending Mechanics
 
 stcUSD is the yield-bearing stablecoin of Cap that enables users to earn rewards via a decentralized credit marketplace.
 
@@ -8,7 +8,7 @@ Let us exemplify the mechanics of stcUSD.
 
 ## How does stcUSD work?
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Happy Path: Yield is distributed to all stakeholders</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Happy Path: Yield is distributed to all stakeholders</p></figcaption></figure>
 
 1. **Minting and Staking**: Alice deposits \~$100 worth of $stable (a dollar-pegged asset) to the reserve to mint \~100 cUSD. She then stakes her cUSD in exchange for \~100 stcUSD.
 2. **Idle Asset Rewards**: The idle $stable in the reserve automatically accrues rewards. Rewards can come directly from the underlying of $stable, or via integrated protocols (e.g. Aave, Morpho), determined programmatically depending on the rates.
@@ -32,7 +32,7 @@ Let us first examine the happy path, where the Borrower successfully repays the 
 
 In Cap, the liquidation logic is triggered by one objective condition: the Borrower's health factor (ratio of collateral to debt) drops below the liquidation threshold. This can happen if the value of the Underwriter's delegated collateral falls or the Borrower's debt grows beyond safe levels.
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Unhappy Path: Stablecoin Holders are protected against yield-generation risk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Unhappy Path: Stablecoin Holders are protected against yield-generation risk</p></figcaption></figure>
 
 When such an event happens, the path forks from step 5.
 

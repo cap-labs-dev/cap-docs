@@ -1,15 +1,15 @@
 # Protocol Overview
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ### Protocol Overview
 
-Cap is a credit marketplace where the functions of underwriting, borrowing, and lending are separated and enforced by code. Underwriters escrow collateral to backstop  Borrowers. Those Borrowers gain access to credit lines funded by Lenders depositing dollar denominated assets. The Underwriter's escrowed collateral is the first-loss buffer: if a Borrower defaults, the collateral is liquidated before Lenders absorb any loss. Every guarantee, every collateral position, and every Borrower exposure can be verified onchain.
+Cap is a credit marketplace where the functions of underwriting, borrowing, and lending are separated and enforced by code. Underwriters escrow collateral to backstop Borrowers. Those Borrowers gain access to credit lines funded by Lenders depositing dollar denominated assets. The Underwriter's escrowed collateral is the first-loss buffer: if a Borrower defaults, the collateral is liquidated before Lenders absorb any loss. Every guarantee, every collateral position, and every Borrower exposure can be verified onchain.
 
 ### Protocol Actors
 
 * **Lenders** receive cUSD in exchange for depositing whitelisted assets to the collateral pool. cUSD can be staked for stcUSD to earn auto-compounding yield on institutional loans, with principal protected by Underwriter collateral.
-* **Borrowers** draw reserve assets against Underwriter collateral to execute yield strategies. When repaying, they pay the hurdle rate: an aggregate of underwriting premium and borrow rate.&#x20;
+* **Borrowers** draw reserve assets against Underwriter collateral to execute yield strategies. When repaying, they pay the hurdle rate: an aggregate of underwriting premium and borrow rate.
 * **Underwriters** escrow collateral to back a specific Borrower, earning a fixed underwriting premium they set per loan. Underwriter delegations are used to protect Lenders against default risk.
 * **Liquidators** liquidate Underwriter collateral via permissionless reverse Dutch auction when a Borrower's health factor falls below threshold.
 

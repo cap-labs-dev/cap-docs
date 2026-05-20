@@ -2,9 +2,9 @@
 
 ## Ethereum Mainnet
 
-### **Cap Vault**&#x20;
+### **Cap Vault**
 
-<table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC</td></tr><tr><td>stcUSD</td><td>0x88887bE419578051FF9F4eb6C858A951921D8888</td></tr><tr><td>Debt USDC</td><td>0xfa8C6D0b95d9191B5A1D51C868Da2BDFd6C04Ff9</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC</td></tr><tr><td>stcUSD</td><td>0x88887bE419578051FF9F4eb6C858A951921D8888</td></tr><tr><td>Debt USDC</td><td>0xfa8C6D0b95d9191B5A1D51C868Da2BDFd6C04Ff9</td></tr><tr><td>Cap Token</td><td>0x99991c6AAbba5a096f24f250b73580F5179b9999</td></tr></tbody></table>
 
 ### **Cap Infra**
 
@@ -20,7 +20,22 @@
 
 ## MegaETH Mainnet
 
-### **Cap Vault**&#x20;
+### **Cap Vault**
 
 <table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC</td></tr><tr><td>stcUSD</td><td>0x88887bE419578051FF9F4eb6C858A951921D8888</td></tr></tbody></table>
 
+## Multi-sigs
+
+**Developer multi-sig Address:** 0xb8FC49402dF3ee4f8587268FB89fda4d621a8793
+
+**Cap token owner multi-sig:**
+
+0x80A216738E4e49B262Deae6bEb6578Bdf164c2eA
+
+Signers:
+
+* 0xDD30a4712e6B34926d4f5aA99c1881573407538C
+* 0xdf466Fa3ddd0042d990FA9A023e040884CBaD439
+* 0x7c29F6A93df60Bcd3B20f03B57a2F9e698FD4128
+* 0x62D0b3c0a77bE77EaB2060266a95FfaD9e6A3F51
+* 0xA62f87A9D4B5EE1F83cb644Ea076832A396101b8

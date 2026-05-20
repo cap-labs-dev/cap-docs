@@ -7,7 +7,7 @@ Cap integrates Symbiotic's restaking infrastructure to create a delegation-based
 ### Vault to Borrower relationship
 
 * **Unique Borrower-Vault pair**: Each Symbiotic Vault can only delegate to one Borrower. A Borrower must use a different Ethereum address in order to receive delegations from a new Vault. Likewise, an Underwriter must deploy a new Vault in order to delegate to a new Borrower.
-* Once a Borrower starts receiving delegations, the Borrower address is immutable.&#x20;
+* Once a Borrower starts receiving delegations, the Borrower address is immutable.
 
 ### Lifecycle of Symbiotic Vault
 
@@ -21,12 +21,12 @@ Let's dive deeper into each of the steps.
 
 ### Deploy Vault
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Cap Symbiotic Vault creation and deposit flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Cap Symbiotic Vault creation and deposit flow</p></figcaption></figure>
 
 The `createVault` function is the core deployment function in the `CapSymbioticVaultFactory` contract.
 
 {% hint style="info" %}
-Vaults that are not registered using the Vault Factory will not be accepted in Cap's system.&#x20;
+Vaults that are not registered using the Vault Factory will not be accepted in Cap's system.
 {% endhint %}
 
 ```solidity
@@ -49,7 +49,7 @@ Specifically, the function executes the following:
 1. deploys a Symbiotic operator for the specified agent to manage delegation
 2. deploys Symbiotic Vault and modules according to Cap requirements
 
-Let us dive deeper into the specific requirements of Cap Symbiotic Vaults.&#x20;
+Let us dive deeper into the specific requirements of Cap Symbiotic Vaults.
 
 #### 1. Burner
 
@@ -74,7 +74,7 @@ function _deployBurner(address _collateral) internal returns (address) {
 
 #### 2. Delegator
 
-The Delegator module specifies whether restaking is allowed across networks and Borrowers, and the allocation of assets.&#x20;
+The Delegator module specifies whether restaking is allowed across networks and Borrowers, and the allocation of assets.
 
 Cap requires that staked assets are solely used as coverage for the specific Borrower receiving delegations (i.e. stake cannot be shared with other networks/Borrowers). As such, the [OperatorNetworkSpecificDelegator](https://docs.symbiotic.fi/modules/vault/delegation#3-operatornetworkspecificdelegator) is used to ensure delegations are siloed. Each vault can only delegate to one Borrower.
 
@@ -82,13 +82,13 @@ Cap requires that staked assets are solely used as coverage for the specific Bor
 
 The Slasher handles slash requests from Cap’s middleware, by fetching stake from the Delegator and calling the Vault to transfer the assets to the Burner.
 
-The vault uses `INSTANT` slasher type for immediate slash execution, so that liquidation bonuses can be redistributed immediately.&#x20;
+The vault uses `INSTANT` slasher type for immediate slash execution, so that liquidation bonuses can be redistributed immediately.
 
 #### 4. Vault
 
 The Vault handles deposit and withdrawals on an epoch basis. Assets leave Symbiotic vaults only when there is a withdrawal or liquidation event.
 
-Deposits are instant. Withdrawals take until the end of the next epoch to withdraw. The epoch is fixed to 7 days, hence withdrawals take up to 14 days to execute.&#x20;
+Deposits are instant. Withdrawals take until the end of the next epoch to withdraw. The epoch is fixed to 7 days, hence withdrawals take up to 14 days to execute.
 
 #### 5. Staker Rewards
 
@@ -108,7 +108,7 @@ stakerRewards = defaultStakerRewardsFactory.create(
 
 ### Whitelisting
 
-After the Vault is created, the Vault needs to be added to Cap's system.&#x20;
+After the Vault is created, the Vault needs to be added to Cap's system.
 
 Cap whitelists the Borrower-Vault pair via the addAgent function in the [SymbioticAgentManager](https://github.com/cap-labs-dev/cap-contracts/blob/1064b6a969d55c822dcf0b2c4b733ceb4118737e/contracts/delegation/providers/symbiotic/SymbioticAgentManager.sol#L42) contract. The contract acts as a bridge between the Cap delegation system and the Symbiotic restaking infrastructure, ensuring proper registration and configuration of Borrowers in the system.
 
@@ -137,7 +137,7 @@ IDelegation(delegation).addAgent(
 );
 ```
 
-Next, the Vault, rewarder and agent are registered to Cap's Middleware, completing necessary Symbiotic Opt In processes.&#x20;
+Next, the Vault, rewarder and agent are registered to Cap's Middleware, completing necessary Symbiotic Opt In processes.
 
 ```solidity
 ISymbioticNetworkMiddleware($.networkMiddleware).registerVault(

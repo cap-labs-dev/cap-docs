@@ -63,6 +63,7 @@
   * [Platform Terms of Use](resources/terms-and-conditions/platform-terms-of-use.md)
   * [Privacy Policy](resources/terms-and-conditions/privacy-policy.md)
 * [Audits](resources/audits.md)
+* [Whitepaper](resources/whitepaper.md)
 * [Dashboard](resources/dashboard.md)
 
 ***

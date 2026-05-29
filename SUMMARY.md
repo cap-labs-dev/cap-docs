@@ -10,6 +10,7 @@
   * [Financial Guarantees](overview/protocol-overview/financial-guarantees.md)
 * [Risks](overview/risks.md)
 * [FAQs](overview/faqs.md)
+* [Tokenomics](overview/tokenomics.md)
 
 ## Guides
 

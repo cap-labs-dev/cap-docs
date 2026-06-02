@@ -36,6 +36,6 @@ $CAP holders vote on the following protocol decisions:
 
 #### Supply Schedule
 
-The circulating supply at TGE consists of the ICO allocation (5,000,000 tokens) and 8% of the Ecosystem & Community allocation, roughly 13% of total supply.
+The circulating supply at TGE consists of the ICO allocation (5%) and 8% fro the Ecosystem & Community allocation, summing up to roughly 13% of total supply.
 
 Cliff-gated allocations (Private Investors, Project Team, Echo Community Sale) commence unlocking 12 months post-TGE.&#x20;

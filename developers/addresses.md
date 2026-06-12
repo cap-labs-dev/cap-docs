@@ -30,6 +30,12 @@
 
 <table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0x20C0000000000000000000000520792DcCccCccC</td></tr><tr><td>stcUSD</td><td>0x20c0000000000000000000008EE4fcFF88888888</td></tr></tbody></table>
 
+## Katana Mainnet
+
+### **Cap Vault**
+
+<table data-full-width="false"><thead><tr><th width="198.5">Contract</th><th width="541.5">Address</th></tr></thead><tbody><tr><td>cUSD</td><td>0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC</td></tr><tr><td>stcUSD</td><td>0x88887bE419578051FF9F4eb6C858A951921D8888</td></tr></tbody></table>
+
 ## Multi-sigs
 
 **Developer multi-sig Address:** 0xb8FC49402dF3ee4f8587268FB89fda4d621a8793

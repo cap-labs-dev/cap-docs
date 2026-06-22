@@ -25,17 +25,19 @@ $CAP holders vote on the following protocol decisions:
 
 | Allocation            | % of Supply |
 | --------------------- | ----------- |
-| Ecosystem & Community | 47.97%      |
+| Ecosystem & Community | 47.45%      |
 | Private Investors     | ≤20.00%     |
 | Project Team          | ≤20.00%     |
 | ICO                   | 5.00%       |
 | Private TVL Deals     | 3.75%       |
 | Echo Community Sale   | 3.28%       |
+| Market Makers         | 0.52%       |
 
 ***
 
 #### Supply Schedule
 
-The circulating supply at TGE consists of the ICO allocation (5%) and 8% from the Ecosystem & Community allocation, summing up to roughly 13% of total supply.
+The circulating supply at TGE consists of the ICO allocation and 10% from the Ecosystem & Community allocation, summing up to roughly 15% of total supply.
 
-Cliff-gated allocations (Private Investors, Project Team, Echo Community Sale) commence unlocking 12 months post-TGE.&#x20;
+Cliff-gated allocations (Private Investors, Project Team, Echo Community Sale) commence unlocking 12 months post-TGE. 25% of the allocation unlock at the one year anniversary of TGE, followed by linear monthly vesting for 3 years.
+

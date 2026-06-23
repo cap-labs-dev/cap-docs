@@ -4,7 +4,7 @@ If you have a question that is not covered in our documentation, please post it 
 
 ### Helpful links
 
-Twitter: [https://x.com/capmoney\_](https://x.com/capmoney_)
+Twitter: [https://x.com/CapApp](https://x.com/CapApp)
 
 Website: [https://cap.app](https://cap.app/)
 

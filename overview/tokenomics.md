@@ -25,13 +25,13 @@ $CAP holders vote on the following protocol decisions:
 
 | Allocation            | % of Supply |
 | --------------------- | ----------- |
-| Ecosystem & Community | 47.45%      |
+| Ecosystem & Community | 47.37%      |
 | Private Investors     | ≤20.00%     |
 | Project Team          | ≤20.00%     |
 | ICO                   | 5.00%       |
 | Private TVL Deals     | 3.75%       |
 | Echo Community Sale   | 3.28%       |
-| Market Makers         | 0.52%       |
+| Market Makers         | 0.6%        |
 
 ***
 

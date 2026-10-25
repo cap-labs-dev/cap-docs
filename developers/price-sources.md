@@ -38,7 +38,7 @@ The patterns below use the **cUSD** token contract and the mainnet **Oracle** (s
 
 ### Backing balances per asset
 
-Call `cUSD.assets()` to obtain the ordered list of backing assets, then for each `asset` call `cUSD.totalSupply(asset)` to read how much of that reserve token is held in the cUSD vault for that asset. Together, these balances describe the collateral side of the basket that backs outstanding cUSD.
+Call `cUSD.assets()` to obtain the ordered list of backing assets, then for each `asset` call `cUSD.totalSupplies(asset)` to read how much of that reserve token is held in the cUSD vault for that asset. Together, these balances describe the collateral side of the basket that backs outstanding cUSD.
 
 ### Redemption weights (1 cUSD → each underlying)
 
